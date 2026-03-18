@@ -4,13 +4,13 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from src.analytics_utils import ensure_parent_dir, save_dataframe, save_json
-from src.arb_analysis import save_arb_analysis
-from src.cleaning import clean_quotes
-from src.data_loading import load_raw_quotes
-from src.metrics import compute_spread_metrics, compute_time_gap_stats
-from src.settings import ANALYTICS_DIR, DEFAULT_RAW_QUOTES_FILE
-from src.xarray_builder import build_xarray_from_raw, flatten_dataset
+from generated.analytics_utils import ensure_parent_dir, save_dataframe, save_json
+from generated.arb_analysis import save_arb_analysis
+from generated.cleaning import clean_quotes
+from generated.data_loading import load_raw_quotes
+from generated.metrics import compute_spread_metrics, compute_time_gap_stats
+from generated.settings import ANALYTICS_DIR, DEFAULT_RAW_QUOTES_FILE
+from generated.xarray_builder import build_xarray_from_raw, flatten_dataset
 
 
 def _save_cleaning_artifacts(

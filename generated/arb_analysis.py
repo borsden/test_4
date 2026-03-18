@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 
-from src.analytics_utils import save_dataframe, save_json
+from generated.analytics_utils import save_dataframe, save_json
 
 
 @dataclass(frozen=True)
